@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
-  experimental: {
-    appDir: true,
-  },
+  output: "export",
+  distDir: "out",
+  trailingSlash: true,
 };
 
 export default nextConfig;
