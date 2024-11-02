@@ -2,9 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { WeatherData } from "./types";
 
 const WeatherPage = () => {
-  const [weatherData, setWeatherData] = useState<any>(null);
+  const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [city, setCity] = useState<string>("São Paulo");
@@ -74,27 +75,28 @@ const WeatherPage = () => {
       </div>
       <div className="p-10 max-w-md mx-auto bg-[#7873dc] rounded-3xl ">
         <h2 className="text-[30px]/[40px] font-bold text-center font-poppins">
-          Clima em {weatherData.name}
+          Clima em {weatherData?.name}
         </h2>
-        <Image
-          src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}
-          alt={weatherData.weather[0].description}
-          width={50}
-          height={500}
-          className="mx-auto"
-        />
-
+        {weatherData && weatherData.weather && weatherData.weather[0] && (
+          <Image
+            src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}
+            alt={weatherData.weather[0].description}
+            width={50}
+            height={500}
+            className="mx-auto"
+          />
+        )}
         <p className="mt-2 text-center font-poppins ">
-          Temperatura: {weatherData.main.temp} °C
+          Temperatura: {weatherData?.main.temp} °C
         </p>
         <p className="text-center font-poppins ">
-          Descrição: {weatherData.weather[0].description}
+          Descrição: {weatherData?.weather[0].description}
         </p>
         <p className="text-center font-poppins ">
-          Umidade: {weatherData.main.humidity}%
+          Umidade: {weatherData?.main.humidity}%
         </p>
         <p className="text-center font-poppins ">
-          Vento: {weatherData.wind.speed} m/s
+          Vento: {weatherData?.wind.speed} m/s
         </p>
       </div>
     </>
