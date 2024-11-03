@@ -50,12 +50,22 @@ const WeatherPage = () => {
     }
   };
 
-  if (loading) return <p className="text-center">Carregando...</p>;
-  if (error) return <p className="text-red-500 text-center">{error}</p>;
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
+  if (loading)
+    return <p className="text-center text-2xl font-bold">Carregando...</p>;
+  if (error)
+    return (
+      <p className="text-red-600 text-center font-bold text-2xl">{error}</p>
+    );
 
   return (
     <>
-      <h1 className="py-10 px-4 ml-6 text-left text-[60px] font-bold text-fuchsia-200 font-poppins ">
+      <h1 className="py-6 px-4 sm:py-10 sm:px-9 text-left text-[40px] sm:text-[60px] font-bold text-fuchsia-200 font-poppins  ">
         Real Time Weather System
       </h1>
       <div className="text-center mb-4 text-black ">
@@ -63,6 +73,7 @@ const WeatherPage = () => {
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={handleKeyPress}
           placeholder="Digite o nome da cidade"
           className="p-2 w-52 rounded font-poppins text-[15px]"
         />
@@ -73,8 +84,8 @@ const WeatherPage = () => {
           Buscar
         </button>
       </div>
-      <div className="p-10 max-w-md mx-auto bg-[#7873dc] rounded-3xl ">
-        <h2 className="text-[30px]/[40px] font-bold text-center font-poppins">
+      <div className="mx-auto ml-4 mr-4  sm:mx-auto sm:p-10 p-4 max-w-md bg-[#7873dc] min-h-[200px] rounded-3xl">
+        <h2 className="sm:text-[30px]/[40px] text-[25px] font-bold text-center font-poppins">
           Clima em {weatherData?.name}
         </h2>
         {weatherData && weatherData.weather && weatherData.weather[0] && (
