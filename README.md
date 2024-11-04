@@ -10,7 +10,7 @@ Deploy: [Real Time Weather System](https://real-time-weather-system-cjg4.vercel.
 
 - <a href="#sobre-o-projeto">Sobre o projeto</a>
 - <a href="#funcionalidades">Funcionalidades</a>
-- <a href="#uso-da-API-OpenWeatherMap">Uso da API OpenWeatherMap</a>
+- <a href="#uso-da-api-openweathermap">Uso da API OpenWeatherMap</a>
 - <a href="#tecnologias-utilizadas">Tecnologias utilizadas</a>
 - <a href="#desenvolvido-por"> Desenvolvido por</a>
 
