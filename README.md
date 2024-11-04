@@ -29,11 +29,11 @@ Interface intuitiva: Design moderno e responsivo, garantindo uma ótima experiê
 Para buscar informações meteorológicas, o projeto faz chamadas diretas à API OpenWeatherMap.
 É necessário uma chave de API (substitua o valor da variável API_KEY no código com sua própria chave de API criada).
 
-## 📊 Exemplo de Dados da API
+## 📊Exemplo de Dados da API
 
 Abaixo está um exemplo de resposta da API OpenWeatherMap ao solicitar informações meteorológicas para a cidade de São Paulo.
 
-![Exemplo de Dados da API](./real-time-weather-system/public/exemplo-dados-API.png)
+![Exemplo de Dados da API](./real-time-weather-system/public/exemplo-de-dados-API.png)
 
 A resposta da API é exibida nesta tela e contém informações sobre a localização, clima atual e outros dados relevantes.
 
