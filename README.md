@@ -1,6 +1,6 @@
 # Real Time Weather System - Sistema meteorológico em tempo real
 
-Deploy: [Card Component](https://real-time-weather-system-cjg4.vercel.app/)
+Deploy: [Real Time Weather System](https://real-time-weather-system-cjg4.vercel.app/)
 
 ### Imagem do Projeto 👇
 
