@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Real Time Weather System - Sistema meteorológico em tempo real
 
-## Getting Started
+Deploy: [Card Component](https://real-time-weather-system-cjg4.vercel.app/)
 
-First, run the development server:
+### Imagem do Projeto 👇
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Imagem do projeto](./real-time-weather-system/public/real-time-weather-system%20.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Índice
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- <a href="#sobre-o-projeto">Sobre o projeto</a>
+- <a href="#funcionalidades">Funcionalidades</a>
+- <a href="#uso-da-API-OpenWeatherMap">Uso da API OpenWeatherMap</a>
+- <a href="#tecnologias-utilizadas">Tecnologias utilizadas</a>
+- <a href="#desenvolvido-por"> Desenvolvido por</a>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📝Sobre o projeto
 
-## Learn More
+Seja bem-vindo ao Real Time Weather System, uma aplicação web que permite aos usuários consultar informações meteorológicas atualizadas de diversas cidades ao redor do mundo de forma simples e intuitiva. O projeto foi desenvolvido com React e utiliza a API OpenWeatherMap para buscar dados em tempo real.
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto foi criado como uma iniciativa pessoal com o objetivo de aprofundar minhas habilidades em integração com back-end e no consumo de APIs externas. Após pesquisar diferentes opções, escolhi a API OpenWeatherMap para praticar o consumo de dados meteorológicos em tempo real e aplicar conceitos de gerenciamento de estado e renderização dinâmica no React.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Consulta de clima: Pesquise informações sobre a temperatura atual, umidade e condições meteorológicas de qualquer cidade ou país.
+Atualização em tempo real: Os dados são atualizados automaticamente quando uma nova cidade é pesquisada.
+Interface intuitiva: Design moderno e responsivo, garantindo uma ótima experiência de usuário.
 
-## Deploy on Vercel
+## 🌦️Uso da API OpenWeatherMap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para buscar informações meteorológicas, o projeto faz chamadas diretas à API OpenWeatherMap.
+É necessário uma chave de API (substitua o valor da variável API_KEY no código com sua própria chave de API criada).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠Tecnologias utilizadas
+
+<div>
+<img alt="React" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+>
+<img alt="Tailwind" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg">
+<img alt="API OpenWeatherMap" height="50" src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png">
+</div>
+
+## 👩🏽‍💻Desenvolvido por
+
+### Amanda Hellen
+
+## 📌Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
