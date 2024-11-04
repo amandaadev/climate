@@ -17,7 +17,7 @@ const WeatherPage = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric&lang=pt`
       );
 
       if (!response.ok) {
@@ -98,7 +98,11 @@ const WeatherPage = () => {
           />
         )}
         <p className="mt-2 text-center font-poppins ">
-          Temperatura: {weatherData?.main.temp} °C
+          Temperatura:{" "}
+          {weatherData?.main.temp !== undefined
+            ? Math.round(weatherData.main.temp)
+            : "N/A"}
+          °C
         </p>
         <p className="text-center font-poppins ">
           Descrição: {weatherData?.weather[0].description}
