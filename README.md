@@ -10,7 +10,7 @@ Deploy: [Real Time Weather System](https://real-time-weather-system-cjg4.vercel.
 
 - <a href="#sobre-o-projeto">Sobre o projeto</a>
 - <a href="#funcionalidades">Funcionalidades</a>
-- <a href="#uso-da-api-openweathermap">Uso da API OpenWeatherMap</a>
+- <a href="#exemplo-de-dados-da-api">Exemplo de Dados da API</a>
 - <a href="#tecnologias-utilizadas">Tecnologias utilizadas</a>
 - <a href="#desenvolvido-por"> Desenvolvido por</a>
 
@@ -28,6 +28,14 @@ Interface intuitiva: Design moderno e responsivo, garantindo uma ótima experiê
 
 Para buscar informações meteorológicas, o projeto faz chamadas diretas à API OpenWeatherMap.
 É necessário uma chave de API (substitua o valor da variável API_KEY no código com sua própria chave de API criada).
+
+## 📊 Exemplo de Dados da API
+
+Abaixo está um exemplo de resposta da API OpenWeatherMap ao solicitar informações meteorológicas para a cidade de São Paulo.
+
+![Exemplo de Dados da API](./real-time-weather-system/public/exemplo-dados-API.png)
+
+A resposta da API é exibida nesta tela e contém informações sobre a localização, clima atual e outros dados relevantes.
 
 ## 🛠Tecnologias utilizadas
 
