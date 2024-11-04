@@ -26,8 +26,6 @@ Consulta de clima: Pesquise informações sobre a temperatura atual, umidade e c
 Atualização em tempo real: Os dados são atualizados automaticamente quando uma nova cidade é pesquisada.
 Interface intuitiva: Design moderno e responsivo, garantindo uma ótima experiência de usuário.
 
-## 🌦️Uso da API OpenWeatherMap
-
 Para buscar informações meteorológicas, o projeto faz chamadas diretas à API OpenWeatherMap.
 É necessário uma chave de API (substitua o valor da variável API_KEY no código com sua própria chave de API criada).
 
