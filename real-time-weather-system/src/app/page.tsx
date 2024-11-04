@@ -65,7 +65,7 @@ const WeatherPage = () => {
 
   return (
     <>
-      <h1 className="py-6 px-4 sm:py-10 sm:px-9 text-left text-[40px] sm:text-[60px] font-bold text-fuchsia-200 font-poppins  ">
+      <h1 className="py-7 px-4 sm:py-10 sm:px-9 text-left text-[40px] sm:text-[60px] font-bold text-fuchsia-200 font-poppins  ">
         Real Time Weather System
       </h1>
       <div className="text-center mb-4 text-black ">
