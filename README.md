@@ -1,4 +1,4 @@
-# Real Time Weather System - Sistema meteorológico em tempo real
+# Real Time Weather System - Sistema Meteorológico em Tempo Real
 
 Deploy: [Real Time Weather System](https://real-time-weather-system-cjg4.vercel.app/)
 
