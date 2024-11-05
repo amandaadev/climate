@@ -10,7 +10,7 @@ const AlertaPersonalizado: React.FC<AlertaPersonalizadoProps> = ({
 }) => {
   return (
     <div
-      className="fixed top-4 right-4 bg-red-600 text-white p-4 rounded-md flex items-center shadow-lg"
+      className="fixed top-4 right-4 bg-red-600 text-white p-2 lg:p-4 rounded-md flex items-center shadow-lg max-w-xs sm:max-w-sm"
       role="alert"
     >
       <svg
@@ -27,9 +27,9 @@ const AlertaPersonalizado: React.FC<AlertaPersonalizadoProps> = ({
           d="M13 16h-1v-4h-1m1 8h.01M12 12V8m0 4h.01m-6.93 5.42a2 2 0 00-.516-.134 2 2 0 00-2.196.921c-.294.43-.858.67-1.404.622-.526-.047-1.053-.374-1.337-.918-.367-.684-.486-1.48-.324-2.215C.924 11.136 3.8 4.05 12 4c8.2.05 11.076 7.136 11.686 9.98.161.736.043 1.53-.324 2.215-.284.544-.811.871-1.337.918-.546.048-1.11-.191-1.404-.622a2 2 0 00-2.196-.921c-.184.053-.355.134-.516.134h-.1"
         />
       </svg>
-      <span>{mensagem}</span>
+      <span className="text-sm lg:text-base">{mensagem}</span>
       <button
-        className="ml-4 text-sm text-white hover:underline"
+        className="ml-4 text-xs lg:text-sm text-white hover:underline"
         onClick={onClose}
       >
         Fechar
@@ -98,7 +98,7 @@ const WeatherPage = () => {
 
   return (
     <>
-      <h1 className="py-7 px-4 sm:py-10 sm:px-9 text-left text-[40px] sm:text-[60px] font-bold text-fuchsia-200 font-poppins">
+      <h1 className="pt-20 pb-10 px-4 sm:py-10 sm:px-9 text-left text-[40px] sm:text-[60px] font-bold text-fuchsia-200 font-poppins">
         Real Time Weather System
       </h1>
       <div className="text-center mb-4 text-black">
@@ -141,7 +141,7 @@ const WeatherPage = () => {
               Temperatura:{" "}
               {weatherData?.main.temp !== undefined
                 ? Math.round(weatherData.main.temp) + " °C"
-                : "N/A"}
+                : ""}
             </p>
 
             <p className="text-center font-poppins">
